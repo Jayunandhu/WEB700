@@ -13,8 +13,6 @@ const collegeData = require('./modules/collegeData');
 // Start the initialization process
 collegeData.initialize()
     .then(function() {
-        // If initialization is successful, log a success message
-        console.log("Initialization successful");
         // Proceed to retrieve all students' data
         return collegeData.getAllStudents();
     })
